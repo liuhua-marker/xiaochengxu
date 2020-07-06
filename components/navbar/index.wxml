@@ -1,0 +1,24 @@
+ <!-- navbar.wxml -->
+<view class='nav-wrap' style='height: {{height}}px;overflow:{{navbarData.overflow}}'>
+  <!-- 导航栏背景图片 -->
+  <image class="backgroundimg" src="{{navbarData.address}}" bindload="imgLoaded" style="width:{{imageWidth}}px;height:{{imageHeight}}px" />
+  <!-- // 导航栏 中间的标题 -->
+  <view class='nav-title' style='line-height: {{height}}px;color:{{navbarData.white}}'>
+    {{navbarData.title}}
+  </view>
+  <view style='display: flex; justify-content: space-around;flex-direction: column' >
+    <!-- // 导航栏  左上角的返回按钮 -->
+    <!-- //  其中wx:if='{{navbarData.showCapsule}}' 是控制左上角按钮的显示隐藏，首页不显示 -->
+    <view class='nav-capsule' style='height: {{height}}px;' wx:if='{{navbarData.showCapsule}}'>
+      <!-- //左上角的返回按钮，wx:if='{{!share}}'空制返回按钮显示 -->
+      <!-- //从分享进入小程序时 返回上一级按钮不应该存在 -->
+      <!-- navbarData.white是控制按钮颜色的 -->
+      <view bindtap='_navback' wx:if='{{!share&&!navbarData.home}}' class='nav-icon'>
+        <van-icon name="arrow-left" style="color:{{navbarData.white}}"/>
+      </view>
+      <view bindtap='_backhome' wx:if='{{navbarData.home}}' class='nav-icon'>
+        <van-icon name="wap-home-o" style="color:{{navbarData.white}}"/>
+      </view>
+    </view>
+  </view>
+</view>

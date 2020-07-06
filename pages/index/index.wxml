@@ -1,0 +1,17 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+	<!-- 此处是一个swiper轮播 -->
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color='#fff' circular="{{circular}}" class="swiper_bax">
+		<block>
+			<swiper-item>
+				<image widthFix class='banner' src="https://health.qbjiankang.com/cureimg/guan_g1.jpg"></image>
+			</swiper-item>
+			<swiper-item>
+				<image widthFix class='banner' src="https://health.qbjiankang.com/cureimg/guan_g2.jpg"></image>
+			</swiper-item>
+			<swiper-item>
+				<image widthFix class='banner' src="https://health.qbjiankang.com/cureimg/guan_g3.jpg"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
