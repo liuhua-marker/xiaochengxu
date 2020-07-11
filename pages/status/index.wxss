@@ -1,0 +1,22 @@
+/* pages/status/index.wxss */
+.icon{
+  width: 136rpx;
+  height: 136rpx;
+  display: block;
+  margin: 110rpx auto;
+}
+.desc{
+  margin-bottom: 240rpx;
+  font-size: 34rpx;
+  text-align: center;
+}
+.btn{
+  width: 500rpx;
+  height: 90rpx;
+  margin: auto;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  background: #2F6BB4;
+  color: #fff;
+  text-align: center;
+}

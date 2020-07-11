@@ -14,4 +14,15 @@
 			</swiper-item>
 		</block>
 	</swiper>
+
+
+	<view style="margin: 30rpx 0">
+		<van-button type="primary" block open-type="share">分享</van-button>
+	</view>
+	<view style="margin: 30rpx 0">
+		<van-button type="primary" block bind:click="gopay">支付</van-button>
+	</view>
+	<view class="icon">
+		<text class="iconfont icon-copy"></text>
+	</view>
 </view>

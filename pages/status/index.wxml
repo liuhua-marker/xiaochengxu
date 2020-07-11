@@ -1,0 +1,9 @@
+<!--pages/status/index.wxml-->
+<view>
+    <view class="container">
+        <image src="../../img/icon-success.png" class="icon" wx:if="{{status=='success'}}"/>
+        <view class="desc">{{desc}}</view>
+        <navigator open-type="{{openType}}" url="{{url}}" class="btn">确认</navigator>
+    </view>
+</view>
+
